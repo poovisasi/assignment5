@@ -1,0 +1,98 @@
+
+body{
+min-height: 100vh;
+}
+H5{
+padding-left: 10rem;
+padding-top: 5%;
+color: brown;
+
+}
+nav{
+background-color: #f0f8ff;
+box-shadow: 3px 3px 5px rgb(4, 58, 80);
+padding-right: 5%;
+
+}
+nav ul{
+width: 100%;
+list-style: none;
+display: flex;
+align-items: center;
+}
+
+nav li{
+height: 50px;
+}
+nav a{
+height: 100%;
+padding: 0 30px;
+text-decoration: none;
+display: flex;
+align-items: center;
+color: black;
+}
+nav a:hover{
+background-color: rgb(245, 243, 240);
+}
+
+nav li:first-child{
+margin-right: auto;
+padding: 1%;color: rgb(114, 8, 8);
+font-weight: bold;font-size: large;
+
+}
+
+.sidebar{
+position: fixed;
+top: 0;right: 0;
+height: auto;
+width: 150px;
+z-index: 999;
+background-color: #b3c4cc;
+backdrop-filter: blur(10px);
+box-shadow: -10px 0 10px rgb(206, 203, 203);
+display: none;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+}
+.sidebar li{
+width: 100%;
+}
+.sidebar a{
+width: 100%;
+}
+.menu-button{
+display: none;
+}
+@media(max-width:450px){
+.hideOnmobile{
+display: none;
+}
+.menu-button{
+display: block;
+}
+}
+@media(max-width:350px){
+.sidebar{
+width: 100%;
+}
+}
+.TABLE BORDER{
+margin :  10% 10% 10% 10%;
+}
+#chaticon{
+position: fixed;
+right:15%;
+bottom: 10rem;
+border: rgb(7, 26, 7) solid;
+border-radius: 20%;
+background-color: rgb(226, 236, 236);
+ animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: rgb(7, 247, 147);}
+  to {background-color: rgb(156, 235, 9);}
+}
